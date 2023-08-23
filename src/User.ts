@@ -1,4 +1,4 @@
-import faker from "@faker-js/faker";
+import { faker } from "@faker-js/faker";
 
 class User {
   name: string;
@@ -7,5 +7,6 @@ class User {
     lng: number;
   };
   constructor() {
+    this.name = faker.name.firstName();
   }
 }
